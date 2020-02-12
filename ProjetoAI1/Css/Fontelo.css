@@ -1,0 +1,692 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya SC); 
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
+
+
+body {
+  height: 100vh;
+  background: url("../Imagens/background1.jpg") no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Muli', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  
+}
+
+h2 {
+  font-family: 'Bitter', serif;
+  font-size: 70px;
+  color: white;
+}
+
+h3 {
+  color: #2B3327;
+  font-family: 'Cinzel', serif;
+  font-size: 50px;
+  margin-block-end: 0;
+  font-weight:normal;
+
+}
+
+h4 {
+    font-family: 'Muli', sans-serif;
+    font-size:3em;
+    font-weight: 300;
+    text-align:center;
+    height:8%;
+    margin-top:4%;
+}
+
+
+.OutrasDisciplinas{
+  font-family: 'Muli', sans-serif;
+  font-size: 30px;
+  color: black;
+  text-decoration:none;
+ 
+}
+
+.OutrasDisciplinas:hover{
+    color:#2B3327;
+}
+
+
+    
+hr.style {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+hr.style-five:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+.ContainerAtividades {
+    
+    overflow:hidden;
+    position:relative;
+    width:87%;
+    margin:auto;
+    text-align:center;
+    
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height:27%;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  position:relative;
+  padding-top:1%;
+  overflow:hidden;
+    
+}
+
+.FotoInicial {
+  margin-top: 1.5%;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+.FotoFaunaeFlora {
+    border:9px solid #EBEAEA;
+}
+
+img.center {
+  display: block;
+  margin: 0 auto 0 auto;
+  
+  width:98%;
+  border:9px solid #EBEAEA;
+  
+}
+
+#Cabecalho1 {
+position: relative;
+  float:left;
+  margin-top:-3%;
+  
+    
+}
+#Cabecalho2 {
+  margin-top:-2%;
+  position:relative;
+  
+  float:left;
+    margin-left:1%;
+  
+}
+
+.clock {
+    position: relative;
+    float:right;
+    margin-top:2%;
+    color: #2B3327;
+    font-size: 20px;
+    font-family: Orbitron;
+    letter-spacing: 3px;
+    min-width:100px;
+    min-height:60px;
+    
+
+}
+
+.date{
+    position: relative;
+    float:right;
+    margin-top:2%;
+    color: #2B3327;
+    font-size: 20px;
+    font-family: Orbitron;
+    letter-spacing: 3px;
+    min-width:100px;
+    min-height:60px;
+    margin-right:2%;
+    
+}
+
+.Titulo {
+  display: block;
+}
+
+.logo {
+  position:relative;
+  width:95px;
+  margin-top:50%;
+  float:left;
+}
+
+.logo_estgv {
+    position:relative;
+    float:left;
+    width:6%;
+    margin-bottom:1%;
+}
+
+.logo_di {
+    position:relative;
+    float:left;
+    width:6%;
+    margin-left:2%;
+    margin-top:-1%;    
+}
+
+
+nav {
+
+  margin-left: 0.2%;
+  margin-right: 0.2%;
+  border: 6px solid #97704F;
+  border-radius: 10px;
+  background-color: #97704F;
+ 
+}
+
+nav ul {
+    
+  margin: 0.5%;
+  list-style: none;
+  padding-left: 0%;
+}
+
+nav li {
+  display: inline-block;
+  padding-left:10%;
+}
+
+
+section{
+  height: 300px;
+}
+
+#navbar {
+  overflow: hidden;
+    z-index:3;
+	width:100%;
+	margin-bottom:1%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 50px;
+}
+
+
+.menueffect {
+  transition: 0.1s ease;
+  background: #97704F;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 0 10px;
+}
+
+.menueffect:hover {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 6px 0;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -1%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  z-index:1;
+}
+
+.next {
+  right: 1%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 1%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.left{
+   -webkit-animation-name: left;
+  -webkit-animation-duration: 1.0s;
+  position: relative;
+  animation-name: left;
+  animation-duration: 1.0s;
+}
+
+.top{
+  -webkit-animation-name: top;
+  -webkit-animation-duration: 1s;
+  animation-name: top;
+  animation-duration: 1.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@-webkit-keyframes left {
+  from {left: -400px;opacity: 0} 
+  to {left: 0px;opacity: 1}
+}
+
+@keyframes left {
+  from {left: -400px;opacity: 0} 
+  to {left:0px;opacity: 1;}
+}
+
+@-webkit-keyframes top {
+  from {top: -200px;opacity: 0} 
+  to {top: 50%;opacity: 1}
+}
+
+@keyframes top {
+  from {top:-200px;opacity: 0} 
+  to {top: 50%;opacity: 1;}
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+ .prev, .next,.text,h1,h2,h3,.FotoIncial{font-size: 11px}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #7B8A75;
+  border-radius:10px;
+  margin-left:0.5%;
+  margin-right:0.5%;
+  height:53px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #2C3427;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left:0.2%;
+}
+
+img:not([src]) { /*Resolver problema de aparecer border à volta de imagens*/
+    content:             url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+}
+
+#ImgHome {
+    background-image: url('../Imagens/Home.png');
+    width:20px;
+    height:20px;
+    border:none;
+    float:left;
+    
+}
+
+
+.modalidades {
+    float:left;
+    position:relative;
+    width:90%;
+    border-radius:50%;
+    border:5px solid #7B8A75;
+    margin-top:2%;
+}
+
+.modalidades:hover {
+    border:5px solid #2B3327;;
+}
+
+.AtividadesFig {
+  display:inline-block;
+  width: 15%;
+  text-align: center;
+  text-transform:uppercase;
+  font-family: 'Muli', sans-serif; 
+  font-size:1em;
+  
+}
+
+.FloraEFaunaFig {
+  float: left;
+  text-align: center;
+  padding-left:7%;
+  text-transform:uppercase;
+  font-family: 'Muli', sans-serif; 
+  font-size:1em;
+  width:37%;
+  margin-bottom:1%;
+}
+.FotosHistoria {
+    margin-top:3%;
+    border:9px solid #EBEAEA;
+    
+}
+
+.Texto {
+color:#2B3327;
+font-family: 'Muli', sans-serif;
+font-size:1.2em;
+font-weight: 300;
+margin-top:5%;
+text-align:center;
+overflow:hidden;
+  
+}
+
+.Informacoes {
+    color:#2B3327;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    font-size:1.2em;
+    float:left;
+    overflow:hidden;
+    margin-left:3%;
+    
+}
+
+.InformacaoFig {
+  display:inline-block;
+  width: 15%;
+  text-align: center;
+  text-transform:uppercase;
+  font-family: 'Muli', sans-serif; 
+  font-size:1em;
+  
+}
+
+.InformacaoImg {
+    float:left;
+    position:relative;
+    width:90%;
+    border-radius:48%;
+    border:5px solid #7B8A75;
+    margin-top:2%;
+}
+
+.ref{
+    color:#2B3327;
+    text-decoration:underline;
+    
+}
+.TextoInicial {
+text-align:center;
+margin-top:3%;
+padding-left:10%;
+padding-right:10%;
+overflow:hidden;
+}
+
+
+
+.posicionado {
+	float:left;
+	position: absolute;
+    margin-left:180px;
+    margin-top:255px
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color:#2B3327;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7B8A75;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:10px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #2C3427;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius:10px;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #7B8A75;
+  color: white;
+  
+}
+
+.dropdown-content a:hover {
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.containermap {
+    height:100%;
+}
+
+
+ #map{
+    height: 75%;
+    width: 50%;
+    position: relative;
+    left:25%;
+    z-index: 2;
+    border: 9px solid #EBEAEA;
+    margin-top: 6%;
+    
+    
+
+  }
+
+  #weather{
+    position: relative;
+    margin-left:1%;
+    margin-right:1%;
+    border:9px solid #EBEAEA;
+    
+  }
+  
+  .fglobal{
+  width: 100%;
+  margin-top:7%;
+  float:left;
+}
+
+.ftopdiv{
+  float:left;
+  background-color:#cad0c8;
+  width: 100%;
+  height: 50px;
+  overflow:hidden;
+  
+}
+
+a:link.ScrollSuave, a:visited.ScrollSuave{
+    text-decoration: none;
+    color: black;
+    float:right;
+   position: relative;
+top: 50%;
+transform: translateY(-50%);
+padding-right:1%;
+}
+
+
+#toparrow{
+  float:right;
+ 
+}
+
+.fcontainer{
+
+ display: block;
+ float:left;
+ padding-top:3%;
+ background-color: #bfbfbf;
+ width:100%; 
+}
+
+
+
+.fcontent_links{
+  color:black;
+  font-size:13px;
+  display: table;
+  margin-left: 1%;
+  padding-left: 1%;
+  width:33%;
+  float:left;
+  border-spacing:1px;
+  border-top: 1px solid #808080;
+  padding-top:0.5%;
+}
+
+.fcontent_links_2{
+
+  display: table;
+  font-size:13px;
+  font-size:13inpx;
+  color:black;
+  margin-left: 1%;
+  padding-left: 1%;
+  width:33%;
+  float:left;
+}
+
+
+a:link.tpd, a:visited.tpd{
+    text-decoration: none;
+    text-align: center; 
+    display: inline-block;
+    padding: 18px 25px;
+    position: relative;
+    
+    
+}
+
+.tpd{
+    color:#2B3327;
+}
+
+.tpd:hover {
+ color:white;   
+}
+
+
+
+.info{
+  float :left;
+  color:black;
+  font-size: 12px;
+  position: relative;
+  padding-top:1%;
+  padding-bottom: 1%;
+  margin-left:1%;
+  width:85%;
+}
+
+.Ainfo{
+    text-align:center;
+    overflow:hidden;
+    color:#2B3327;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    font-size:1.2em;
+    margin-top:5%;
+    
+}
+
+.FotoNatacao {
+    
+    border:9px solid #EBEAEA;
+    margin-top:2%;
+    
+}
+
+.ScrollSuave1 {
+    
+    color:#2B3327;
+}
+
